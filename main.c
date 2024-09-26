@@ -1,30 +1,38 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+// here we include all the standard input and the oupur files.
 #define MAX_NAME_LENGTH 50
 #define MAX_STUDENTS 100
+// in this part we will have to assign the value of the max and the min.
 
+// in this part we arecreating a strudnt strucutre that will take the student id and age
 struct Student {
     char name[MAX_NAME_LENGTH];
     int id;
     int age;
 };
-
+// for this strucutre we will be taking the student semester and the float 
 struct Semester {
     char name[MAX_NAME_LENGTH];
     float gpa;
 };
 
+// over here we will have the student record such semester
 struct StudentRecord {
     struct Student student;
     struct Semester semesters[8];
     int num_semesters;
 };
 
+
+// we define the  max value
 struct StudentRecord students[MAX_STUDENTS];
 int num_students = 0;
 
+
+
+// in this part we are creating a function that can take the student name,id and age + etc and will store to the student records structure 
 void add_student() {
     if (num_students >= MAX_STUDENTS) {
         printf("Maximum number of students reached.\n");
@@ -48,6 +56,8 @@ void add_student() {
     printf("Student added successfully.\n");
 }
 
+
+// as the same function as before but will store the id semseter name, gpa and will also add to the records
 void add_semester() {
     int student_id;
     printf("Enter student ID: ");
@@ -83,6 +93,8 @@ void add_semester() {
     printf("Semester added successfully.\n");
 }
 
+
+// this is the function that we use for displaying the info after user puts the input of the selected operation
 void display_student_info() {
     int student_id;
     printf("Enter student ID: ");
@@ -111,6 +123,8 @@ void display_student_info() {
     }
 }
 
+
+// in this part we use the calculate gpa option to take the student input of the gpa and will calculate and generate the output
 void calculate_overall_gpa() {
     int student_id;
     printf("Enter student ID: ");
@@ -142,7 +156,7 @@ void calculate_overall_gpa() {
     float overall_gpa = total_gpa / record->num_semesters;
     printf("Overall GPA for %s: %.2f\n", record->student.name, overall_gpa);
 }
-
+// this is the main function that will just provide the user with all the choices that wants.
 int main() {
     int choice;
 
