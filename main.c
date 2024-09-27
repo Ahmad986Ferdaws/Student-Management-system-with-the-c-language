@@ -53,7 +53,7 @@ void add_student() {
     record->num_semesters = 0;
 
     num_students++;
-    printf("Student added successfully.\n");
+    printf("Student add successfully.\n");
 }
 
 
