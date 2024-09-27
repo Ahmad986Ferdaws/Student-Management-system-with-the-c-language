@@ -165,7 +165,7 @@ int main() {
         printf("1. Add Student\n");
         printf("2. Add Semester\n");
         printf("3. Display Student Info\n");
-        printf("4. Calculate Overall GPA\n");
+        printf("4. Calculate Overall Gpa\n");
         printf("5. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
