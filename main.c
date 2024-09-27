@@ -83,7 +83,7 @@ void add_semester() {
 
     struct Semester *semester = &record->semesters[record->num_semesters];
 
-    printf("Enter semester name: ");
+    printf("Please Enter semester name: ");
     scanf("%s", semester->name);
 
     printf("Enter GPA for the semester: ");
