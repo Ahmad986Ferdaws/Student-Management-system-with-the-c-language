@@ -90,7 +90,7 @@ void add_semester() {
     scanf("%f", &semester->gpa);
 
     record->num_semesters++;
-    printf("Semester added successfully.\n");
+    printf("Semester adde successfully.\n");
 }
 
 
