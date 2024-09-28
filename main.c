@@ -14,7 +14,8 @@ struct Student {
 };
 // for this strucutre we will be taking the student semester and the float 
 struct Semester {
-    char name[MAX_NAME_LENGTH];
+// the maximum amoount of the dara this variable can take   
+char name[MAX_NAME_LENGTH];
     float gpa;
 };
 
