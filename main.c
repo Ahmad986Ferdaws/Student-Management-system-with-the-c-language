@@ -12,6 +12,7 @@ struct Student {
     int id;
     int age;
     char gender;
+    char hobby;
 };
 // for this strucutre we will be taking the student semester and the float 
 struct Semester {
