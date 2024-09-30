@@ -11,6 +11,7 @@ struct Student {
     char name[MAX_NAME_LENGTH];
     int id;
     int age;
+    char gender;
 };
 // for this strucutre we will be taking the student semester and the float 
 struct Semester {
