@@ -21,7 +21,7 @@ char name[MAX_NAME_LENGTH];
     float gpa;
     float contribution;
 };
-//
+
 // over here we will have the student record such semester
 struct StudentRecord {
     struct Student student;
