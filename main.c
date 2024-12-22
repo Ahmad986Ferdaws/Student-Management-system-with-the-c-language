@@ -30,7 +30,7 @@ struct StudentRecord {
 };
 
 
-// we define the  max value
+// we already defined the  max value of the students 
 struct StudentRecord students[MAX_STUDENTS];
 int num_students = 0;
 
